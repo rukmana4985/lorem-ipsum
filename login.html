@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/owl/css/owl.carousel.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="ghost-white">
+    <div class="col m12">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 login-card">
+                    <div class="left-card col m6 ghost-white">
+                        <h3 class="grey-text text-darken-1 left-card-title center">Good Morning!  Welcome Back</h3>
+                        <p class="flow-text left-card-subtitle  center grey-text text-lighten-1">Enter your details below here</p>
+                        <div class="row">
+                            <div class="input-field col s12 input">
+                                <input id="usernmae" type="text" class="validate">
+                                <label for="usernmae">Username</label>
+                            </div>
+                            <br>
+                            <div class="input-field col s12 input">
+                                <input id="password" type="password" class="validate">
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="input-field col s12 input">
+                                <button class="btn btn-login btn-large malibu">Login</button>
+                            </div>
+                            <br>
+                            <div class="input-field col s12 input center">
+                                <p class="grey-text  signup-text">Dont have account yet? <a href="#" class="bold grey-text text-darken-2">Signup now </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-card col m6">
+                        <div class="owl-carousel owl-theme" id="login-carousel">
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <div class="img responsive-img img-responsive"></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <div class="img2 responsive-img"></div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <div class="img3 responsive-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--JavaScript at end of body for optimized loading-->
+<script src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+<script src="assets/owl/js/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#login-carousel").owlCarousel({
+            items: 1,
+            nav  : false,
+            loop :true,
+            dots :false,
+            margin:0,
+            stagePadding:0,
+            draggable:true,
+            autoplay:true,
+            lazyLoad:true,
+            // navText:["<button><i class='material-icons center'>chevron_left</i></button>","<button><i class='material-icons'>chevron_right</i></button>"]
+        });
+    });
+</script>
+</body>
+</html>
